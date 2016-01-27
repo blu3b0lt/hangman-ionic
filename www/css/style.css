@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "rope";
+  src: url('Rope MF.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "SF";
+  src: url('SF.ttf') format('truetype');
+}
+
+html, body, ion-content {
+  background-color:#2b2a2a;
+  width: 100%;
+  height: 100%;
+  background-color:#269;
+background-image: linear-gradient(white 2px, transparent 2px),
+linear-gradient(90deg, white 2px, transparent 2px),
+linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
+}
+
+ion-content {
+  width: 100%;
+  height: 100%;
+}
+
+.pulse-button {
+
+  position: block;
+  border: none;
+  box-shadow: 0 0 0 0 rgba(173, 35, 75, 0.7);
+  border-radius: 50%;
+  background-color: #303030;
+  background-size:contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+.play {
+
+  font-family: rope;
+  color: white;
+  font-size: 1000%;
+  text-align: center;
+  -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+.pulse-button:hover 
+{
+  box-shadow: 0 0 0 0 rgba(225, 165, 0, 0.7);
+}
+
+@-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+
+.heading {
+  font-family: rope;
+  color: #8D5118;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1000%;
+  padding: 0;
+}
+
+.difficulty {
+
+  width: 60%;
+  padding-top: 0%;
+  margin: 0 auto;
+
+}
+
+
+.label {
+  font-family: rope;
+  color: #8D5118;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 500%;
+}
+
+ion-drawer-vertical-wrapper {
+  background-color: #303030;
+}
+
+.row {
+  height: 33.33%;
+}
+
+
+.pulse {
+  -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+.tick {
+  color: #4d61de;
+  font-size: 1rem;
+  font-family: SF;
+  padding-down: 2%;
+}
+
+rzslider .rz-pointer {
+  background-color: #4d61de;
+}
+
+.playBox {
+  text-align: center;
+}
+
+.playBox button {
+  margin: 0px 0px;
+}
+
